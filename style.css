@@ -111,9 +111,57 @@ button:hover{
     flex-grow: 1;
     width: 50vw;
     align-items: center;
-    flex-grow: 1;
 }
 
 .right img:hover{
     transform: scale(1.2);
+}
+
+@media (max-width: 900px){
+    .right img{
+        height: 320px;
+    }
+    .nav-content > ul > li{
+        font-size: 15px;
+    }
+    .logo, .username{
+        width: 25vw;
+    }
+    .nav-content > ul{
+        width: 50vw;
+    }
+
+}
+
+@media (max-width: 500px){
+    main{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        padding: 10%;
+    }
+
+    .left p:nth-child(2){
+        font-size: 40px;
+    }
+
+    .right{
+        margin: auto;
+    }
+    button{
+        margin: auto;
+    }
+    .nav-content > ul > li{
+        font-size: 10px;
+    }
+    nav{
+        margin: 5px 2px;
+    }
+    .logo, .username{
+        width: 20vw;
+    }
+    .nav-content > ul{
+        width: 60vw;
+    }
 }
