@@ -4,44 +4,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USER-INTERFACE</title>
+    <title>Laundry Service</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png">
+
 </head>
 
 <body>
     <div class="total">
         <div class="container">
-        <nav>
-            <div class="logo">
-                <img src="image.png" alt="" height="50px">
+            <nav>
+                <div class="logo">
+                    <img src="image.png" alt="" height="50px">
+                </div>
+                <div class="nav-content">
+                    <ul>
+                        <li>Home</li>
+                        <li>Services</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="username">
+                    <img src="https://www.pngitem.com/pimgs/m/105-1050694_user-placeholder-image-png-transparent-png.png"
+                        alt="" height="50px">
+                </div>
+            </nav>
+        </div>
+
+        <main>
+            <div class="left">
+                <p>Revitalize Your Clothes with Expert</p>
+                <p>Laundry Services!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi saepe libero inventore eveniet
+                    similique, ab laborum enim numquam itaque dignissimos obcaecati corporis sit non amet quas
+                    consectetur ad nesciunt officia nostrum quibusdam autem!</p>
+                <button>Book a service today!</button>
             </div>
-            <div class="nav-content">
-                <ul>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                </ul>
+            <div class="right">
+                <img src="https://static.vecteezy.com/system/resources/previews/026/721/204/original/washing-machine-and-laundry-laundry-sticker-png.png"
+                    alt="" height="490px">
             </div>
-            <div class="username">
-                <img src="https://www.pngitem.com/pimgs/m/105-1050694_user-placeholder-image-png-transparent-png.png"
-                    alt="" height="50px">
+        </main>
+
+        <section class="top-section">
+            <div class="service-overview">
+                <div class="achievements">
+                    <h1>Our Achievements</h1>
+                </div>
+                <div class="right">
+                    <div class="laundry-services">
+                        <div class="num">15+</div>
+                        <div class="content">Laundry Services</div>
+                    </div>
+                    <div class="happy-customers">
+                        <div class="num">240+</div>
+                        <div class="content">Happy Customers</div>
+                    </div>
+                    <div class="experience">
+                        <div class="num">2+ Yrs</div>
+                        <div class="content">Experience</div>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </section>
     </div>
 
-    <main>
-        <div class="left">
-            <p>Revitalize Your Clothes with Expert</p>
-            <p>Laundry Services!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi saepe libero inventore eveniet similique, ab laborum enim numquam itaque dignissimos obcaecati corporis sit non amet quas consectetur ad nesciunt officia nostrum quibusdam autem!</p>
-            <button>Book a service today!</button>
+    <section>
+        <div class="booking-services">
+            <div class="left-book">
+                <div class="service-info">
+                    <h1>Our Services</h1>
+                    <p>Click On The Add To Cart Button To Add The Services To Your Cart</p>
+                </div>
+                <div id="service-list" class="service-items">
+                    <!-- <div class="dry-cleaning service-item">
+                        <span><img width="24" height="24"
+                                src="https://img.icons8.com/external-konkapp-outline-color-konkapp/64/external-dry-cleaning-laundry-konkapp-outline-color-konkapp.png"
+                                alt="external-dry-cleaning-laundry-konkapp-outline-color-konkapp" /> Dry Cleaning</span>
+                        <span class="price">₹200.00</span>
+                        <button class="remove-item">Remove Item <span class="minus">-</span></button>
+                        <button class="add-item toggle">Add Item <span class="plus">+</span></button>
+
+                    </div>
+                    <div class="wash-and-fold service-item">
+                        <span><img width="24" height="24" src="https://img.icons8.com/color-glass/48/wash-by-hand.png"
+                                alt="wash-by-hand" /> Wash & Fold</span>
+                        <span class="price">₹100.00</span>
+                        <button class="remove-item">Remove Item <span class="minus">-</span></button>
+                        <button class="add-item">Add Item <span class="plus">+</span></button>
+
+
+                    </div>
+                    <div class="ironing service-item">
+                        <span><img width="24" height="24"
+                                src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/external-ironing-stay-at-home-flatart-icons-flat-flatarticons.png"
+                                alt="external-ironing-stay-at-home-flatart-icons-flat-flatarticons" /> Ironing</span>
+                        <span class="price">₹30.00</span>
+                        <button class="remove-item">Remove Item <span class="minus">-</span></button>
+                        <button class="add-item">Add Item <span class="plus">+</span></button>
+                    </div>
+                    <div class="stain-removal service-item">
+                        <span><img width="24" height="24"
+                                src="https://img.icons8.com/external-obvious-flat-kerismaker/48/external-clean-clothes-laundry-flat-obvious-flat-kerismaker.png"
+                                alt="external-clean-clothes-laundry-flat-obvious-flat-kerismaker" /> Stain
+                            Removal</span>
+                        <span class="price">₹500.00</span>
+                        <button class="remove-item">Remove Item <span class="minus">-</span></button>
+                        <button class="add-item">Add Item <span class="plus">+</span></button>
+                    </div>
+                    <div class="leather-cleaning service-item">
+                        <span>✨ Leather & Suede Cleaning</span>
+                        <span class="price">₹999.00</span>
+                        <button class="remove-item">Remove Item <span class="minus">-</span></button>
+                        <button class="add-item">Add Item <span class="plus">+</span></button>
+                    </div>
+                    <div class="wedding-cleaning service-item">
+                        <span>👗 Wedding Dress Cleaning</span>
+                        <span class="price">₹2800.00</span>
+                        <button class="remove-item">Remove Item <span class="minus">-</span></button>
+                        <button class="add-item">Add Item <span class="plus">+</span></button>
+
+                    </div> -->
+                </div>
+                <div class="service-last">
+                    🛈 Add the items to the cart and book now
+                </div>
+            </div>
+            <div class="right-book">
+                <div class="shop-cart">
+                    <div class="shop-cart-up">
+                        <h1>Added Items</h1>
+                        <div class="shop-cart-items">
+                            <span>S.No.</span>
+                            <span class="servi">Service Name</span>
+                            <span>Price</span>
+                        </div>
+                        <div id="cart-list">
+
+                        </div>
+                    </div>
+                    <div class="total_amount">
+                        <span class="shop-span">Total Amount</span>
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="booking-detail">
+                    <h3>Book Now</h3>
+                    <div class="name">
+                        <div>Full name</div>
+                        <input type="text" name="" id="Naam" pattern="[A-Za-z ]+"
+                            title="Name should contain only letters and spaces" placeholder="John Doe" required>
+                    </div>
+                    <div class="id_no">
+                        <div class="e_id">
+                            <div>Email ID</div>
+                            <input type="email" name="email_id" id="email_id"
+                                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                                title="Please enter a valid email address (example@email.com)"
+                                placeholder="yourmail@gmail.com" required>
+                        </div>
+                        <div class="phn_no">
+                            <div>Phone Number</div>
+                            <input type="tel" name="contact_no" id="contact_no" placeholder="xxxxxxxxxx"
+                                pattern="[0-9]{10}" inputmode="numeric" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-book-now"><button class="book-now">Book now</button></div>
+                
+            </div>
         </div>
-        <div class="right">
-            <img src="https://static.vecteezy.com/system/resources/previews/026/721/204/original/washing-machine-and-laundry-laundry-sticker-png.png" alt="" height="490px">
-        </div>
-    </main>
-    </div>
+    </section>
+
+    <footer>
+        <section class="ico">
+            <div class="premium">
+                <span class="material-symbols-outlined" style="font-size: 100px;display: flex;justify-content: center;">
+                    local_laundry_service
+                </span>
+                <h3 style="display: flex; justify-content: center;">Premium Services</h3>
+                <div style="display: flex; justify-content: center; color: #666666b8; margin-top: 10px;">Elevate your
+                    wardrobe with our meticulous dry cleaning, ensuring garments look and feel as good as new.</div>
+            </div>
+            <div class="support">
+                <span class="material-symbols-outlined" style="font-size: 100px;display: flex;justify-content: center;">
+                    support_agent
+                </span>
+                <h3 style="display: flex; justify-content: center;">Quick Support</h3>
+                <div style="display: flex; justify-content: center; color: #666666b8; margin-top: 10px;">
+                    Fast, reliable support to keep your experience smooth and worry-free always.
+                </div>
+            </div>
+            <div class="free">
+                <span class="material-symbols-outlined" style="font-size: 100px;display: flex;justify-content: center;">
+                    delivery_truck_speed
+                </span>
+                <h3 style="display: flex; justify-content: center;">Hassle Free Delivery</h3>
+                <div style="display: flex; justify-content: center; color: #666666b8; margin-top: 10px;">
+                    Enjoy seamless service with our convenient pickup and delivery options, tailored to your schedule.
+                </div>
+            </div>
+            <div class="afford">
+                <span class="material-symbols-outlined" style="font-size: 100px;display: flex;justify-content: center;">
+                    price_check
+                </span>
+                <h3 style="display: flex; justify-content: center;">Affordable Prices</h3>
+                <div style="display: flex; justify-content: center; color: #666666b8; margin-top: 10px;">
+                    Experience exceptional care without breaking the bank - our affordable prices make laundary day
+                    stress free.
+                </div>
+            </div>
+        </section>
+        <section class="subscription">
+            <div class="left-part">
+                Subscribe to our newsletter.
+            </div>
+            <div class="right-part">
+                <div class="detail-top">
+                    <input type="text" name="Name" id="Name" placeholder="Full Name"
+                        style="margin-right: 4rem; margin-left: 6rem;">
+                    <input type="email" name="Email_id" id="Email_id" placeholder="Email">
+                </div>
+                <div class="detail-bot">
+                    <button class="subscb">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <section class="Linked">
+            <div class="abt">
+                <div><img src="image.png" alt="image logo" width="45"></div>
+                <h3>About Us</h3>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dolorem?</div>
+            </div>
+            <div class="impt">
+                <h3>Important Links</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of use</li>
+                    <li>Refund Policy</li>
+                </ul>
+            </div>
+            <div class="cont">
+                <h3>Contact</h3>
+                <ul>
+                    <li>mail@site.com</li>
+                    <li>+91 9800230023</li>
+                </ul>
+            </div>
+            <div class="folw">
+                <h3>Follow Us</h3>
+                <div style="display: flex; align-items: center; margin-top: 15px;"> 
+                    <a href="https://instagram.com/"  target="_blank"><img width="50" height="50"
+                            src="https://img.icons8.com/3d-fluency/94/instagram-logo.png" alt="instagram-logo" /></a>
+                    <a href="https://facebook.com/"  target="_blank"><img width="50" height="50"
+                            src="https://img.icons8.com/color/50/facebook.png" alt="facebook" /></a>
+                    <a href="https://x.com/"  target="_blank"><img width="44" height="44"
+                            src="https://img.icons8.com/ios-filled/50/twitterx--v1.png" alt="twitterx--v1" /></a>
+                    <a href="https://youtube.com/"  target="_blank"><img width="48" height="48"
+                            src="https://img.icons8.com/fluency/48/youtube-play.png" alt="youtube-play" /></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
