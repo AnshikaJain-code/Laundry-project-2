@@ -47,7 +47,7 @@ nav{
 
 .nav-content > ul > li:hover{
     transform: translateY(2px);
-    color: rgb(78, 78, 78);;
+    color: rgb(45, 191, 254);
 }
 
 .username{
@@ -56,10 +56,12 @@ nav{
     justify-content: flex-end;
 }
 
+
+
 main{
     display: flex;
     width: 100vw;
-    height: 90vh;
+    height: 78vh;
     /* padding-left: 150px; */
 
 }
@@ -96,7 +98,7 @@ button{
     height: 51px;
     font-size: 20px;
     border-radius: 60px;
-    background-color: rgb(45, 191, 254);
+    background-color: rgb(0, 137, 196);
     color: white;
     border: none;
 }
@@ -113,9 +115,56 @@ button:hover{
     align-items: center;
 }
 
-.right img:hover{
-    transform: scale(1.2);
+.service-overview{
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 90vw;
+    height: 11vh;
+    margin-bottom: 2vh;
+    background-color: rgb(0, 137, 196);
 }
+
+.achievements{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.right{
+    width: 60%;
+}
+
+.laundry-services{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 33%;
+    border-right: 2px solid rgb(3, 159, 225);
+}
+
+.happy-customers{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 34%;
+    border-right: 2px solid rgb(3, 159, 225);
+}
+
+.experience{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 33%;
+}
+
+.num{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 
 @media (max-width: 900px){
     .right img{
@@ -130,8 +179,12 @@ button:hover{
     .nav-content > ul{
         width: 50vw;
     }
+    .achievements h1{
+        font-size: 1.5rem;
+    }
 
 }
+
 
 @media (max-width: 500px){
     main{
@@ -164,4 +217,247 @@ button:hover{
     .nav-content > ul{
         width: 60vw;
     }
+    .top-section{
+        margin-top: 240px;
+    }
+    .service-overview{
+        flex-direction: column;
+    }
+    .achievements{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .content{
+        font-size: 14px;
+    }
+
+}
+
+.add-item{
+    background-color: rgb(226, 254, 232);
+    color: rgb(37, 130, 1);
+    height: 2.5rem;
+    width: 8rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    position: absolute;
+    right: 0;
+    border-radius: 5px;
+}
+
+.remove-item{
+    background-color: rgb(250 234 234);
+    color: rgb(242, 8, 8);
+    height: 2.5rem;
+    width: 8rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    position: absolute;
+    right: 0;
+    border-radius: 5px;
+}
+
+.left-book{
+    border: 2px solid #f3f0f0;
+    width: 31rem;
+    margin-left: 12rem;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 3rem;
+    height: fit-content;
+}
+
+.service-info{
+    border-bottom: 2px solid #f3f0f0;
+}
+
+.price{
+    color: rgb(51, 51, 241);
+}
+
+.service-items{
+    position: relative;
+    padding-top: 4px;
+    border-bottom: 2px solid #f3f0f0;
+}
+
+.service-last{
+    color: rgb(30, 30, 241);
+
+}
+
+
+.right-book{
+    width: 31rem;
+    line-height: 3rem;
+    margin-left: 12rem;
+}
+
+.booking-services{
+    display: flex;
+}
+
+.shop-cart{
+    border: 2px solid #f3f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    height: min(50%, fit-content);
+}
+
+.shop-cart > h1{
+    height: 20%;
+}
+
+.shop-cart-items{
+    display: flex;
+    height: 10%;
+}
+
+.shop-cart-items div{
+    display: flex;
+}
+
+.servi {
+    width: 80%;
+    padding-left: 5%;
+}
+
+.shop-cart-item {
+    display: flex;
+    height: 60%;
+}
+
+.total_amount {
+    height: 10%;
+    /* width: 100%; */
+}
+
+.shop-span {
+    margin-right: 20.5rem;
+}
+
+.booking-detail{
+    border: 2px solid #f3f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 2rem;
+    margin: 10px 0;
+}
+
+.id_no{
+    display: flex;
+    column-gap: 6rem;
+}
+
+.name{
+    line-height: normal;
+}
+
+
+.name :last-child,
+.e_id :last-child,
+.phn_no :last-child{
+    height: 2rem;
+    padding-left: 5px;
+    width: 100%;
+    border: 2px solid #f0eded;
+    border-radius: 7px;
+}
+
+.name::placeholder{
+    color: rgba(71, 70, 70, 0.5);
+}
+
+.book-now{
+    width: 100%;
+    font-size: 27px;
+
+}
+
+.book-now:hover{
+    cursor: pointer;
+}
+
+.ico{
+    display: flex;
+    margin: 6rem 6rem 4rem 6rem;
+    column-gap: 4rem;
+}
+
+.subscription{
+    display: flex;
+    margin: 4rem 6rem;
+    border: 2px solid;
+    background-color: rgb(0, 137, 196);
+    height: 250px;
+    padding: 40px;
+    column-gap: 5rem;
+}
+
+.left-part{
+    font-size: 55px;
+    color: white;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.right-part{
+    width: 60%;
+}
+
+#Name, #Email_id{
+    width: 16rem;
+    height: 3rem;
+    font-size: 20px;
+    padding-left: 12px;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+#Name::placeholder,
+#Email_id::placeholder{
+    color: rgba(225, 228, 228, 0.911);
+}
+
+.subscb{
+    margin-top: 50px;
+    margin-left: 17rem;
+    border-radius: 10px;
+    background-color: #1da1f2;
+}
+
+.Linked{
+    display: flex;
+    margin: 6rem 6rem 4rem 6rem;
+    column-gap: 4rem;
+}
+
+.abt{
+    width: 25%;
+}
+
+.impt{
+    width: 25%;
+}
+
+.impt > ul,
+.cont > ul{
+    list-style: none;
+    padding: 6px;
+}
+
+.cont{
+    width: 25%;
+}
+
+.folw{
+    width: 25%;
 }
